@@ -10,6 +10,11 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@property (weak) IBOutlet NSSecureTextFieldCell *passwordField;
 @property (assign) IBOutlet NSWindow *window;
+- (IBAction)EnterClicked:(id)sender;
+- (IBAction)CancelClicked:(id)sender;
+- (BOOL) attemptVaultMountWithPassword: (NSString *) password;
+- (NSString *) hash:(NSString *) str;
 
 @end
