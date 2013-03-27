@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "NSStrinAdditions.h"
+#import "ImageSnap.h"
 #include <CommonCrypto/CommonDigest.h>
 
 @implementation AppDelegate
@@ -32,6 +33,22 @@
     if(![self attemptVaultMountWithPassword: password])
     {
         
+        NSDateFormatter *formatter;
+        NSString        *dateString;
+        
+        formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"dd-MM-yyyy HH:mm"];
+        
+        dateString = [formatter stringFromDate:[NSDate date]];
+        dateString = [dateString stringByAppendingPathExtension:@"jpg"];
+        
+        NSString * path = [@"/Users/russell/Library/Application Support/.fconfig/log" stringByAppendingPathComponent:dateString];
+        NSLog(@"%@", path);
+        [ImageSnap saveSingleSnapshotFrom:[ImageSnap defaultVideoDevice] toFile:path];
+        
+        NSAlert * alert = [NSAlert new];
+        [alert setMessageText:@"Incorrect Password"];
+        [alert runModal];
     }
     else
     {
