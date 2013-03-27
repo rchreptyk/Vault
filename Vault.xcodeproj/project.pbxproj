@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		469305CD1702D64A00C93298 /* ImageSnap.m in Sources */ = {isa = PBXBuildFile; fileRef = 469305CC1702D3FB00C93298 /* ImageSnap.m */; };
+		469305CF1702D73E00C93298 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469305CE1702D73E00C93298 /* CoreFoundation.framework */; };
+		469305D11702D74A00C93298 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469305D01702D74A00C93298 /* Quartz.framework */; };
+		469305D31702D75300C93298 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469305D21702D75300C93298 /* QTKit.framework */; };
 		46B2711E16FC3ECF0029C951 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B2711D16FC3ECF0029C951 /* Cocoa.framework */; };
 		46B2712816FC3ECF0029C951 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46B2712616FC3ECF0029C951 /* InfoPlist.strings */; };
 		46B2712A16FC3ECF0029C951 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B2712916FC3ECF0029C951 /* main.m */; };
 		46B2712E16FC3ECF0029C951 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 46B2712C16FC3ECF0029C951 /* Credits.rtf */; };
 		46B2713116FC3ECF0029C951 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B2713016FC3ECF0029C951 /* AppDelegate.m */; };
 		46B2713416FC3ECF0029C951 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B2713216FC3ECF0029C951 /* MainMenu.xib */; };
+		46B2713C16FC41090029C951 /* VaultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B2713B16FC41090029C951 /* VaultController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		469305CB1702D3FB00C93298 /* ImageSnap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageSnap.h; sourceTree = "<group>"; };
+		469305CC1702D3FB00C93298 /* ImageSnap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageSnap.m; sourceTree = "<group>"; };
+		469305CE1702D73E00C93298 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		469305D01702D74A00C93298 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		469305D21702D75300C93298 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
 		46B2711A16FC3ECF0029C951 /* Vault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vault.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B2711D16FC3ECF0029C951 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		46B2712016FC3ECF0029C951 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -29,6 +39,8 @@
 		46B2712F16FC3ECF0029C951 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		46B2713016FC3ECF0029C951 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		46B2713316FC3ECF0029C951 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		46B2713A16FC41090029C951 /* VaultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VaultController.h; sourceTree = "<group>"; };
+		46B2713B16FC41090029C951 /* VaultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VaultController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +48,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469305D31702D75300C93298 /* QTKit.framework in Frameworks */,
+				469305D11702D74A00C93298 /* Quartz.framework in Frameworks */,
+				469305CF1702D73E00C93298 /* CoreFoundation.framework in Frameworks */,
 				46B2711E16FC3ECF0029C951 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +61,9 @@
 		46B2711116FC3ECF0029C951 = {
 			isa = PBXGroup;
 			children = (
+				469305D21702D75300C93298 /* QTKit.framework */,
+				469305D01702D74A00C93298 /* Quartz.framework */,
+				469305CE1702D73E00C93298 /* CoreFoundation.framework */,
 				46B2712316FC3ECF0029C951 /* Vault */,
 				46B2711C16FC3ECF0029C951 /* Frameworks */,
 				46B2711B16FC3ECF0029C951 /* Products */,
@@ -82,8 +100,12 @@
 		46B2712316FC3ECF0029C951 /* Vault */ = {
 			isa = PBXGroup;
 			children = (
+				469305CB1702D3FB00C93298 /* ImageSnap.h */,
+				469305CC1702D3FB00C93298 /* ImageSnap.m */,
 				46B2712F16FC3ECF0029C951 /* AppDelegate.h */,
 				46B2713016FC3ECF0029C951 /* AppDelegate.m */,
+				46B2713A16FC41090029C951 /* VaultController.h */,
+				46B2713B16FC41090029C951 /* VaultController.m */,
 				46B2713216FC3ECF0029C951 /* MainMenu.xib */,
 				46B2712416FC3ECF0029C951 /* Supporting Files */,
 			);
@@ -166,8 +188,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469305CD1702D64A00C93298 /* ImageSnap.m in Sources */,
 				46B2712A16FC3ECF0029C951 /* main.m in Sources */,
 				46B2713116FC3ECF0029C951 /* AppDelegate.m in Sources */,
+				46B2713C16FC41090029C951 /* VaultController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +327,7 @@
 				46B2713916FC3ECF0029C951 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
