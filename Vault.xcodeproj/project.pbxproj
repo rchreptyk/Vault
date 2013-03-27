@@ -11,6 +11,7 @@
 		469305CF1702D73E00C93298 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469305CE1702D73E00C93298 /* CoreFoundation.framework */; };
 		469305D11702D74A00C93298 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469305D01702D74A00C93298 /* Quartz.framework */; };
 		469305D31702D75300C93298 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469305D21702D75300C93298 /* QTKit.framework */; };
+		469305D51702DA8900C93298 /* Vault.icns in Resources */ = {isa = PBXBuildFile; fileRef = 469305D41702DA8900C93298 /* Vault.icns */; };
 		46B2711E16FC3ECF0029C951 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B2711D16FC3ECF0029C951 /* Cocoa.framework */; };
 		46B2712816FC3ECF0029C951 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46B2712616FC3ECF0029C951 /* InfoPlist.strings */; };
 		46B2712A16FC3ECF0029C951 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B2712916FC3ECF0029C951 /* main.m */; };
@@ -26,6 +27,7 @@
 		469305CE1702D73E00C93298 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		469305D01702D74A00C93298 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		469305D21702D75300C93298 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		469305D41702DA8900C93298 /* Vault.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Vault.icns; sourceTree = SOURCE_ROOT; };
 		46B2711A16FC3ECF0029C951 /* Vault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vault.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B2711D16FC3ECF0029C951 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		46B2712016FC3ECF0029C951 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -115,6 +117,7 @@
 		46B2712416FC3ECF0029C951 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				469305D41702DA8900C93298 /* Vault.icns */,
 				46B2712516FC3ECF0029C951 /* Vault-Info.plist */,
 				46B2712616FC3ECF0029C951 /* InfoPlist.strings */,
 				46B2712916FC3ECF0029C951 /* main.m */,
@@ -178,6 +181,7 @@
 				46B2712816FC3ECF0029C951 /* InfoPlist.strings in Resources */,
 				46B2712E16FC3ECF0029C951 /* Credits.rtf in Resources */,
 				46B2713416FC3ECF0029C951 /* MainMenu.xib in Resources */,
+				469305D51702DA8900C93298 /* Vault.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
