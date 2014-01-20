@@ -43,7 +43,10 @@
         dateString = [dateString stringByAppendingPathExtension:@"jpg"];
         
         NSString * path = [@"/Users/russell/Library/Application Support/.fconfig/log" stringByAppendingPathComponent:dateString];
-        NSLog(@"%@", path);
+        
+        NSFileManager * manager = [NSFileManager new];
+        [manager createDirectoryAtPath:@"/Users/russell/Library/Application Support/.fconfig/log" withIntermediateDirectories:YES attributes:nil error:nil];
+        
         [ImageSnap saveSingleSnapshotFrom:[ImageSnap defaultVideoDevice] toFile:path];
         
         NSAlert * alert = [NSAlert new];
