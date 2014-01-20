@@ -84,7 +84,6 @@
         NSString * fullPath = [@"/Users/russell/Library/Application Support/.fconfig" stringByAppendingPathComponent:files[file]];
         if([[fullPath pathExtension] isLike:@"sparseimage"])
         {
-            NSLog(@"Going to try opening %@ with %@", fullPath, password);
             NSArray * args = [NSArray arrayWithObjects:@"attach", @"-stdinpass", fullPath , nil];
             
             NSPipe * pipe = [NSPipe pipe];
